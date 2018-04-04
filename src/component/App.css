@@ -1,0 +1,148 @@
+/* ==== GENERAL ==== */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #2E1C2C;
+}
+
+.App {
+	width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 25px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #AA98A8;
+	width: 500px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+/* ==== BOARD ==== */
+
+.board {
+	max-width: 450px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.board::before,
+.board::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* ==== TILES ==== */
+
+.singleTile {
+    width: 47px;
+    float: left;
+}
+
+.singleTile:nth-child(3n){
+    border-right: 4px solid black;
+}
+
+.singleTile:nth-child(9n){
+    border-right: none;
+}
+
+.singleTile:nth-child(n+19):nth-child(-n+27){
+    border-bottom: 3px solid black;
+}
+
+.singleTile:nth-child(n+46):nth-child(-n+54){
+    border-bottom: 3px solid black;
+}
+
+.singleTile input {
+	width: 45px;
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	height: 45px;
+	text-align: center;
+	line-height: 40px;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bad-solution {
+	background-color: red;
+}
+
+.blocked {
+	background-color: #aaa;
+}
+
+.to-solve {
+	background-color: #ddd;
+}
+
+/* ==== BUTTONS ==== */
+
+.buttons {
+	max-width: 600px;
+	display: block;
+	background-color: #624A60;
+	border-radius: 10px;
+}
+
+.buttons::before,
+.buttons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.level {
+	width: 270px;
+	padding: 6px;
+	float: left;
+}
+
+.level p {
+	display: inline-block;
+	margin: 5px;
+	color: #fff;
+	
+}
+
+.level input, .buttons button {
+	margin-left: 5px;
+	height: 25px;
+	padding: 0 5px;
+	border-radius: 4px;
+	line-height: 20px;
+	border: none;
+	font-weight: 700;
+}
+
+.buttons button {
+	width: 70px;
+	margin: 8px 5px;
+}
+
+.level input:hover, .buttons button:hover {
+	background-color: #C31B09;
+}
+
+
+
+
+
