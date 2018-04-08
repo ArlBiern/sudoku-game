@@ -32,7 +32,8 @@ class App extends Component {
     const arrChangeSudoku = actualSudoku.splice(id, 1, value);
     const updateSudoku = actualSudoku.join('');
     this.setState({
-      gameBoard: updateSudoku
+      gameBoard: updateSudoku,
+      testSolution: ''
     })
   }
   

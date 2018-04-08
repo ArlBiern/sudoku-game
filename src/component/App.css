@@ -51,7 +51,7 @@ h1 {
 }
 
 .singleTile:nth-child(3n){
-    border-right: 4px solid black;
+    border-right: 3px solid #FF2300;
 }
 
 .singleTile:nth-child(9n){
@@ -59,11 +59,11 @@ h1 {
 }
 
 .singleTile:nth-child(n+19):nth-child(-n+27){
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #FF2300;
 }
 
 .singleTile:nth-child(n+46):nth-child(-n+54){
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid #FF2300;
 }
 
 .singleTile input {
